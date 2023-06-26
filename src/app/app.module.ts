@@ -3,11 +3,12 @@ import { BrowserModule } from "@angular/platform-browser";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { BorderCardDirective } from "./border-card.directive";
+import { PageNotFoundComponent } from "./page-not-found/page-not-found.component";
+import { PokemonModule } from "./pokemon/pokemon.module";
 
 @NgModule({
-  declarations: [AppComponent, BorderCardDirective],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent, PageNotFoundComponent],
+  imports: [BrowserModule, PokemonModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
